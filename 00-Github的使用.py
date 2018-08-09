@@ -146,7 +146,7 @@
 #   总结
 
     # 从github初始化本地项目:git clone
-        # 本地操作 git add, git commit, git push oringin master
+        # 本地操作 git add, git commit, git push origin master
 
     # 从github同步：git pull
     # 历史版本 git reset 版本号， git checkout 文件名
