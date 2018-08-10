@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>{{ title }}</title>
 </head>
 <body>
-$END$
+        <h1>{{ header }}}</h1>
+        <ul>
+            <!--控制流语句-->
+            <!--也可以在你的控制语句块中间使用{% sef foo="bar" %} 来设置变量-->
+            {% for book in books %}
+            <li>{{ book }}</li>
+            {% end %}
+        </ul>
+
 </body>
 </html>
