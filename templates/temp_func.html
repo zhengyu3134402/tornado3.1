@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--模板中的函数-->
+    <!--替换字符串中的& < > 为他们对应的HTML字符-->
+    {{ escape(a) }}<br>
+
+    <!--替换字符串b中的字符为URL编形式-->
+    {{ url_escape(b) }}<br>
+
+    <!--将c编码成JSON格式-->
+    {{ json_encode(c) }}<br>
+
+    <!--把联系的多个空白字符替换成一个空格-->
+    {{ squeeze(d) }}<br>
+
+    使用了autocaping=None关闭了自动转义
+    {{ e }}
+</body>
+</html>
