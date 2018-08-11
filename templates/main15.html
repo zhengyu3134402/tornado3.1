@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="{{ static_url('css/style15.css') }}">
+    <script src="{{ static_url('js/script15.js') }}"></script>
 </head>
 <body>
-$END$
+    <div id="container">
+        <header>
+            {% block header %}
+                <h1>Books</h1>
+            {% end header %}
+        </header>
+
+        <div id="main">
+            <div id="content">
+                {% block body %}{% end body %}
+            </div>
+        </div>
+        <footer>
+            {% block footer %}
+                <p>
+                    For more information about our selection...
+                </p>
+            {% end footer %}
+        </footer>
+    </div>
+
 </body>
 </html>
