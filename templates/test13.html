@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>test13</title>
+    <!--利用static_url的调用生成了URL的值，并渲染输出了文件路径-->
+    <!--不使用硬编码的原因
+        1.static_url函数创建了一个基于文件内容的hash值，并将其添加url末尾（查询字符串的参数v）
+          这个hash值确保浏览器总是加载一个文件的最新版而不是之前缓存版本-->
     <link rel="stylesheet" href="{{ static_url('style13.css') }}">
 </head>
 <body>
