@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test13</title>
+    <link rel="stylesheet" href="{{ static_url('style13.css') }}">
+</head>
+<body>
+    <!--迭代替代文本中的每行，再迭代每行中的单词。如果当前单词的第一个字母是source_map字典
+    的一个键，我们使用random.choice 函数从字典的值中随机选择一个单词并展示，如果字典中没有
+    这个字母，就展示原文本当中的原始单词-->
+    <h1>your text</h1>
+    <p>
+        {% for line in change_lines %}
+            {% for word in line.split('') %}
+                {% if len(word) > 0 and word[0] in source_map %}
+                    <span class="replaced" title="{{ word }}">
+                        {{ choice(source_map[word[0]]) }}
+                    </span>
+                {% else %}
+                    <span class="unchanged" title="unchanged">{{ word }}</span>
+                {% end %}
+            {% end %}
+                    <br>
+        {% end %}
+    </p>
+
+</body>
+</html>

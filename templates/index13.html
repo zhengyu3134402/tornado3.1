@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ static_url('style13.css') }}">
+</head>
+<body>
+    <!--包含了一个允许用户POST一个源文本和一个替换到/test13的表单-->
+    <h1>the alpha</h1>
+    <p>enter two texts below</p>
+    <form action="/test13" method="post">
+        <p>source text</p><br>
+            <textarea name="source" id="source" cols="55" rows="4"></textarea>
+        <p>text for replacement</p>
+            <textarea name="change" id="change" cols="55" rows="4"></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>
