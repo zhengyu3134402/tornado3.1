@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <!--挖坑{% block title %}{% end %}-->
+    <title>{% block title %}{% end %}</title>
+    {% block header %}{% end %}
 </head>
 <body>
-$END$
+        <h1>这是一个父模板</h1>
+    {% block body1 %}{% end %}
 </body>
 </html>

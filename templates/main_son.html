@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!--继承父模板的所有标签-->
+{% extends "main.html" %}
+
+<!--填坑-->
+{% block title %}
+    fuck(字模版中的填坑)
+{% end title%}
+
+<!--填坑，并传入了变量-->
+{% block body1 %}
+<h2>这是在字模版的填坑</h2>
+<h1>{{ a }}</h1>
+{% end body1 %}
