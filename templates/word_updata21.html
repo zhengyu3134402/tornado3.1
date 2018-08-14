@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <h1>信息为:{{ information }}</h1>
+    <form action="/word_f" method="post">
+        <h1>想把值{{ check_args }}改成</h1> <input type="text" name="change">
+        <input type="submit" value="提交">
+    </form>
+
 </body>
 </html>

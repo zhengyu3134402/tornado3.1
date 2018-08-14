@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <label>已经找到你想修改的单词为</label><h2>{{ data1 }}</h2>
+    <form action="/word_updata_check" method="post">
+        <label>请输入想改的值:</label><input type="text" name="key1">
+        <input type="submit" value="提交">
+    </form>
+
 </body>
 </html>
